@@ -1,7 +1,7 @@
 <?php
 use Cake\Routing\Router;
 
-Router::plugin('Help', function ($routes) {
-	$routes->connect('/', ['controller' => 'Help', 'action' => 'index']);
+Router::plugin('Video', function ($routes) {
+	$routes->connect('/', ['controller' => 'Video', 'action' => 'index']);
     $routes->fallbacks('InflectedRoute');
 });
