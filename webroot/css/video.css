@@ -1,0 +1,152 @@
+
+    body {
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    
+    
+    #filters-box {
+        height: calc(100vh - 128px);
+        width: 200px;
+        position: absolute;
+        background: #17aaf5;
+        overflow-y: auto;
+    }  
+    
+    #videos-box {
+        height: calc(100vh - 128px);
+        margin: 0px 0px 0px 200px;
+        overflow-y: auto;
+    }
+    
+    .single-video-box {
+        height: 144px;
+        width: 256px;
+        margin: 40px 20px 0px 20px;
+    }
+    
+    .single-video {
+        height: 144px;
+        width: 256px;
+        border: 1px solid #636363;
+        margin-bottom: 10px;
+    }
+    
+    .single-video:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px #888888;
+    }
+    
+    .video-title {
+        /* We are leaving the description for the regex search and changing the font size to 0 so that if we want it later we can just remove this. */
+        font-size: 0;
+    }
+    
+    .small-single-video-box {
+        padding: 0px 90px 0px 60px;
+        margin: 20px 20px 20px 20px;
+    }
+    
+    .small-single-video {
+        margin-bottom: 10px;
+    }
+    
+    .small-single-video:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px #888888;
+    }
+    
+    #small-menu {
+        border: none;
+        background: #006497 !important;
+    }
+     
+    #small-menu:hover {
+        cursor: pointer;
+        color: #fff !important;
+        background: #0090d9 !important;
+    } 
+    
+    #small-dropdown-menu {
+        margin-top: 0px;
+        width: 100%;
+        color: #fff;
+        background: #17aaf5;
+    }
+    
+    .small-videos-box-spacer {
+        padding-bottom: 20px;
+    }
+    
+    #small-videos-box {
+        height: calc(100vh - 200px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+   
+    .modal {
+        text-align: center;
+        padding: 0!important;
+    }
+
+    .modal:before {
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: -4px;
+        content: '';
+    }
+
+    .modal-dialog {
+        min-width:70%;
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        margin: 0px;
+        
+    }
+    
+    @media (max-width:768px) {
+        .modal-dialog {
+            min-width:100%;
+        }     
+    }
+    
+    [id^="small-filter-"] {
+        padding: 5px 0px 5px 0px;
+        border-bottom: 1px solid #0090d9;
+    }
+    
+    [id^="small-filter-"]:hover {
+        background: #0090d9;
+        cursor: pointer;
+    }
+    
+    [id^="filter-"] {
+        height: 60px;
+        line-height: 60px;
+        cursor: pointer;
+        border-bottom: 1px solid #0090d9;
+    }
+    
+    [id^="filter-"] span {
+        padding-left: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        color: white;
+    }
+
+    [id^="filter-"].active {
+        background: #006497;
+    }
+    
+    [id^="filter-"]:hover {
+        background: #0090d9;
+    }
+    
+    .filter-icon {
+        margin-right:15px;
+    }
+    
+    
